@@ -1,0 +1,19 @@
+#/etc/systemd/system/disable-nvidia.service
+#
+
+
+#set-nvidia.sh script will disable this to avoid issues
+
+[unit]
+Description="activates the script to disable nvidia gpu after graphical.target"
+After=graphical.target
+
+[service]
+Type=oneshot
+RemainAfterExit=no
+ExecStart=usr/bin/sleep 8
+ExecStart=usr/local/bin/optimus.sh
+
+
+[Install]
+WantedBy=graphical.target
