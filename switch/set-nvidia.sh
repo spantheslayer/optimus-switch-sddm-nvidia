@@ -15,3 +15,7 @@ cp /etc/switch/nvidia/optimus.sh /usr/share/sddm/scripts/Xsetup
 sleep 1
 
 echo 'Done, reboot to see the chances. *___*'
+
+
+
+#Thoda dimmag lagake use karna ploxx ;-;
